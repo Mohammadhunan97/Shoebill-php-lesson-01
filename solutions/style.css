@@ -1,8 +1,17 @@
 body{
 	margin-left: 10vw;
 	margin-right: 10vw;
+	background: url('agile.gif');
+	background-size: 100vw 100vh;
 }
-
+.container{
+	text-shadow: -0.7px 0 #EEE, 0 0.7px #EEE, 0.7px 0 #EEE, 0 -0.7px #EEE;
+	font-size: 1.1em;
+	font-weight: 900;
+}
+h1{
+	text-align: center;
+}
 .task{
 	background: #e74c3c;
 	color: white;
@@ -10,4 +19,34 @@ body{
 	padding: 10px;
 	border: 2px solid #e74c3c;
 	font-size: 1.1em;
+}
+.myname{
+	display: inline-block;
+	width: 60vw;
+}
+
+.edit,.delete{
+	background: #3498db;
+	border: 2px solid #3498db;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+}
+.footnote{
+	margin-left: 25vw;
+	text-shadow: -0.7px 0 black, 0 0.7px black, 0.7px 0 black, 0 -0.7px black;
+	color: #ecf0f1;
+	font-size: initial;
+	font-weight: initial;
+	position: absolute;
+	bottom: 30px;
+}
+
+.footnote a{
+	text-shadow: none;
+}
+@media screen and (max-width: 600px) {
+	.myname{
+		display: block;
+	}
 }

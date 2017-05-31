@@ -15,6 +15,7 @@ $data = pg_query($db, $query);
 <head>
 	<title>My Todo list</title>
 	<link rel="stylesheet" href="style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <div class="container">
@@ -29,13 +30,14 @@ $data = pg_query($db, $query);
 		$delete = "<button class='delete' onClick='url(`delete.php?id=$id`)'>Delete</button> ";
 			echo "<hr/>";
 			echo "<br/>";
-			echo $row["id"] . ") \t\t";
-			echo $row["name"];
-			echo "\t\t" . $edit . "\t" . $delete; 
+			echo $row["id"] . ") \t";
+			echo "<p class='myname'>" .$row["name"] . "</p>";
+
+			echo "\t" . $edit . "\t" . $delete; 
 			echo "<br/>";
 		} 
 	?>
-
+	<p class='footnote'>Made with &hearts; by the shoebill developer team: <a href='#'>Github</a></p>
 </div>
 
 <script>
