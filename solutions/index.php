@@ -2,11 +2,11 @@
 include './db/db.php';
 $query = 'SELECT * FROM TASKS;';
 $data = pg_query($db, $query); 
-if($data){
-	echo "query successful";
-}else{
-	echo "query failure";
-}
+// if($data){
+// 	echo "query successful";
+// }else{
+// 	echo "query failure";
+// }
 
 ?>
 
