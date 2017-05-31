@@ -1,0 +1,13 @@
+body{
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+
+.task{
+	background: #e74c3c;
+	color: white;
+	border-radius: 5px;
+	padding: 10px;
+	border: 2px solid #e74c3c;
+	font-size: 1.1em;
+}
