@@ -6,3 +6,8 @@ psql -f db/seeds.sql to seed database
 
 Sample sql query from php
 
+composer:
+
+curl -sS https://getcomposer.org/installer | php
+php composer.phar
+mv composer.phar /usr/local/bin/composer
